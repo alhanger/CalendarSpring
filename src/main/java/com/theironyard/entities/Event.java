@@ -23,6 +23,7 @@ public class Event {
     public User user;
 
     public Event() {
+
     }
 
     public Event(User user, LocalDateTime date, String description) {
