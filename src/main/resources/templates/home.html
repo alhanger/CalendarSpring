@@ -19,9 +19,17 @@ Welcome, {{username}}.
 
 <br><br>
 
-{{#events}}
+{{#pagedEvents}}
 <input type="datetime-local" value="{{date}}" disabled/> {{description}}<br>
-{{/events}}
+{{/pagedEvents}}
+
+{{#showPrevious}}
+<a href="/?page={{previousPage}}">Prev</a>
+{{/showPrevious}}
+
+{{#showNext}}
+<a href="/?page={{nextPage}}">Next</a>
+{{/showNext}}
 
 {{/user}}
 </body>
